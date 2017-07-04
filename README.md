@@ -9,3 +9,7 @@ For an input of `New File 1`, example datestamp output would be `New_File_1_2017
 This is what the program looks like.
 
 ![homescreen](screenshots/homescreen.png)
+
+
+
+The icon for the program was found with Google, and edited for transparency.
