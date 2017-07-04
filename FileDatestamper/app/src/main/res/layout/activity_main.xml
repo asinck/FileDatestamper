@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/FileNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Base Filename"
+        android:inputType="textCapWords|textNoSuggestions"/>
+
+    <Button
+        android:id="@+id/dateStampButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/FileNameInput"
+        android:onClick="datestamp"
+        android:text="Datestamp"/>
+
+    <EditText
+        android:id="@+id/OutputEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dateStampButton"
+        android:hint="output goes here"
+        />
+
+    <Button
+        android:id="@+id/timeStampButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/OutputEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="timestamp"
+        android:text="Timestamp"/>
+
+    <Button
+        android:id="@+id/ClipboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OutputEditText"
+        android:layout_centerHorizontal="true"
+        android:onClick="CopyToClipboard"
+        android:text="Copy to Clipboard"/>
+
+
+</RelativeLayout>
